@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,33 +7,33 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #0047AB;
+            background-color: #2a3d66;
             color: white;
-            text-align: center;
             padding: 20px;
-        }
-        nav {
-            background-color: #008000;
-            padding: 10px;
             text-align: center;
         }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
+        h1 {
+            margin: 0;
         }
         .container {
+            width: 80%;
+            margin: auto;
             padding: 20px;
-            text-align: center;
         }
-        footer {
-            background-color: #0047AB;
+        .social-media a {
+            margin: 10px;
+        }
+        .social-media img {
+            width: 40px;
+            height: 40px;
+        }
+        .footer {
+            background-color: #2a3d66;
             color: white;
             text-align: center;
             padding: 10px;
@@ -40,52 +41,83 @@
             bottom: 0;
             width: 100%;
         }
+        .services-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services-list li {
+            padding: 10px;
+            background-color: #fff;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Matella Medical Diagnostic Laboratory</h1>
+        <h1>Welcome to Matella Medical Diagnostic Laboratory</h1>
+        <p>We provide accurate and reliable diagnostic services for your health needs.</p>
     </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container" id="home">
-        <h2>Welcome to Matella Medical Diagnostic Laboratory</h2>
-        <p>Providing high-quality diagnostic services with precision and care.</p>
+
+    <div class="container">
+        <section id="home">
+            <h2>Our Services</h2>
+            <ul class="services-list">
+                <li>Malaria Test</li>
+                <li>Typhoid Test (Widal Test)</li>
+                <li>HIV Test</li>
+                <li>Hepatitis Test</li>
+                <li>Blood Sugar Test</li>
+                <li>Urinalysis</li>
+                <li>Stool Analysis</li>
+                <li>Cholesterol Test</li>
+                <li>Urea Test</li>
+                <li>H.Pylori Test</li>
+                <li>Seminal Analysis</li>
+            </ul>
+        </section>
+
+        <section id="image">
+            <h2>Our Lab</h2>
+            <img src="https://raw.githubusercontent.com/matellamed/matellamed-website/main/pic_matellamedlab.jpg" alt="Matella Medical Diagnostic Laboratory">
+        </section>
+
+        <section id="social-media">
+            <h2>Follow Us</h2>
+            <div class="social-media">
+                <a href="https://www.instagram.com/matellamedlab/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:matellamedlab@gmail.com">matellamedlab@gmail.com</a></p>
+            <p>Phone: <a href="tel:+255617566669">+255617566669</a></p>
+        </section>
     </div>
-    <div class="container" id="home">
-    <!-- Picha ya Jengo la Maabara -->
-    <img src="https://raw.githubusercontent.com/matellamed/matellamed-website/main/pic_matellamedlab.jpg" alt="Matella Medical Diagnostic Laboratory" style="width:100%; height:auto; border-radius: 10px;">
-</div>
-    <div class="container" id="services">
-        <h2>Our Diagnostic Services</h2>
-        <ul>
-            <li>Malaria Test</li>
-            <li>Urinalysis</li>
-            <li>Blood Sugar Test</li>
-            <li>Widal Test</li>
-            <li>H. Pylori Test</li>
-            <li>Pregnancy Test</li>
-            <li>STDs Test (Syphilis, etc.)</li>
-            <li>Seminal Analysis</li>
-            <li>Hepatitis B,C Test</li>
-            <li>Stool Analysis</li>
-            <li>10% KOH Test</li>
-            <li>Full Blood Picture (FBP)</li>
-            <li>Cholesterol Test</li>
-            <li>Urea Test</li>
-        </ul>
-    </div>
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <p>Phone: +255617566669</p>
-        <p>Email: matellamedlab@gmail.com</p>
-        <p>Instagram: @matellamedlab</p>
-    </div>
-    <footer>
-        <p>&copy; 2025 Matella Medical Diagnostic Laboratory. All Rights Reserved.</p>
+
+    <footer class="footer">
+        <p>&copy; 2025 Matella Medical Diagnostic Laboratory. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
